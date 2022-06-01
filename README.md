@@ -1,5 +1,5 @@
 # Loan application DEMO - Java - Event Sourced
-
+Not supported by Lightbend in any conceivable way, not open for contributions.
 ## Prerequisite
 - Java 11 or later<br>
 - Apache Maven 3.6 or higher<br>
@@ -196,13 +196,13 @@ curl -XPOST -d '{
   "client_monthly_income_cents": 60000,
   "loan_amount_cents": 20000,
   "loan_duration_months": 12
-}' https://mute-fog-6388.us-east1.kalix.app/loanapp/1 -H "Content-Type: application/json"
+}' https://mute-fog-6388.us-east1.kalix.app/loanapp/2 -H "Content-Type: application/json"
 ```
 ```
-curl -XGET https://mute-fog-6388.us-east1.kalix.app/loanapp/1 -H "Content-Type: application/json"
+curl -XGET https://mute-fog-6388.us-east1.kalix.app/loanapp/2 -H "Content-Type: application/json"
 ```
 ```
-curl -XPUT https://mute-fog-6388.us-east1.kalix.app/loanapp/1/approve -H "Content-Type: application/json"
+curl -XPUT https://mute-fog-6388.us-east1.kalix.app/loanapp/2/approve -H "Content-Type: application/json"
 ```
 ```
 loan_app_topic.proto
